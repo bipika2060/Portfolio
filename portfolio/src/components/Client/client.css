@@ -1,0 +1,68 @@
+.clientsSection {
+padding: 100px 7%;
+background: linear-gradient(135deg, #f8f3ff, #ffffff);
+scroll-margin-top: 90px;
+}
+
+.testimonialGrid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 25px;
+max-width: 1250px;
+margin: 0 auto;
+}
+
+.testimonialCard {
+padding: 30px;
+background: #ffffff;
+border: 1px solid #eadcfb;
+border-radius: 20px;
+box-shadow: 0 5px 20px rgba(100, 60, 150, 0.05);
+}
+
+.testimonialQuote {
+color: #9566e7;
+font-size: 65px;
+font-weight: 800;
+line-height: 1;
+}
+
+.testimonialCard p {
+min-height: 115px;
+color: #65566e;
+font-size: 16px;
+line-height: 1.8;
+font-family: 'Plus Jakarta Sans', sans-serif; 
+
+}
+
+.testimonialCard h3 {
+margin-bottom: 6px;
+color: #45264c;
+font-size: 19px;
+font-family: 'Plus Jakarta Sans', sans-serif; 
+
+}
+
+.testimonialCard span {
+color: #8750df;
+font-size: 14px;
+font-family: 'Plus Jakarta Sans', sans-serif; 
+
+}
+
+@media (max-width: 900px) {
+.testimonialGrid {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+}
+
+@media (max-width: 600px) {
+.clientsSection {
+padding: 65px 5%;
+}
+
+.testimonialGrid {
+grid-template-columns: 1fr;
+}
+}

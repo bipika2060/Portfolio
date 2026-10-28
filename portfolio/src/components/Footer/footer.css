@@ -1,0 +1,66 @@
+.portfolioFooter {
+  width: 100%;
+  background-color: #561f60;
+  color:white;
+  border-top: 1px solid #453942;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footerLeft p {
+  font-size: 0.9rem;
+  color: white;;
+  margin: 0;
+}
+
+.footerCenter, .footerRight {
+  text-decoration: none;
+  color: white;
+  font-size: 18px ;
+  font-family:'Montserrat', sans-serif;
+}
+
+.footerLink, .socialLink {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footerLink:hover, .socialLink:hover {
+  color: #7048c6;
+}
+
+@media (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+  
+  .footerCenter {
+    order: 1;
+    gap: 1rem;
+  }
+
+  .footerRight {
+    order: 2;
+    gap: 1.25rem;
+  }
+
+  .footerLeft {
+    order: 3;
+  }
+}

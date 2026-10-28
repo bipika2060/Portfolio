@@ -1,0 +1,81 @@
+.contactSection {
+padding: 100px 7%;
+background: #ffffff;
+scroll-margin-top: 90px;
+font-family: 'Plus Jakarta Sans', sans-serif; 
+
+}
+
+.contactForm {
+display: flex;
+flex-direction: column;
+max-width: 650px;
+margin: 0 auto;
+padding: 35px;
+background: #faf7ff;
+border: 1px solid #eadcfb;
+border-radius: 20px;
+box-shadow: 0 8px 30px rgba(100, 60, 150, 0.08);
+
+}
+
+.contactForm label {
+margin: 15px 0 8px;
+color: #45264c;
+font-size: 15px;
+font-weight: 700;
+}
+
+.contactForm input,
+.contactForm textarea {
+width: 100%;
+padding: 14px;
+color: #392744;
+background: #ffffff;
+border: 1px solid #d9c8ed;
+border-radius: 10px;
+outline: none;
+font: inherit;
+box-sizing: border-box;
+transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+border-color: #8750df;
+box-shadow: 0 0 0 3px rgba(135, 80, 223, 0.12);
+
+}
+
+.contactForm textarea {
+resize: vertical;
+}
+
+.contactForm button {
+margin-top: 25px;
+padding: 15px;
+color: #ffffff;
+background: #8747f5;
+border: none;
+border-radius: 12px;
+font-size: 17px;
+font-weight: 700;
+cursor: pointer;
+transition: background 0.3s ease;
+
+}
+
+.contactForm button:hover {
+background: #6931d0;
+}
+
+@media (max-width: 600px) {
+.contactSection {
+padding: 65px 5%;
+}
+
+.contactForm {
+padding: 22px;
+}
+}
